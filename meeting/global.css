@@ -1,0 +1,31 @@
+.hovergallery img{
+-webkit-transform:scale(0.8); /*Webkit: Scale down image to 0.8x original size*/
+-moz-transform:scale(0.8); /*Mozilla scale version*/
+-o-transform:scale(0.8); /*Opera scale version*/
+-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+-o-transition-duration: 0.5s; /*Opera duration version*/
+}
+.hovergallery img:hover{
+-webkit-transform:scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+-moz-transform:scale(1.1); /*Mozilla scale version*/
+-o-transform:scale(1.1); /*Opera scale version*/
+opacity: 1;
+}
+
+.zoom { 
+   width: 300px; padding: 5px; border: 1px solid black; 
+   -webkit-transition: all .3s ease-out; 
+   -moz-transition: all .3s ease-out; 
+   -o-transition: all .3s ease-out; 
+   transition: all .3s ease-out;
+}
+.zoom:hover { 
+   -moz-transform: scale(2);
+   -webkit-transform: scale(2);
+   -o-transform: scale(2);
+   transform: scale(2);
+   -ms-transform: scale(1);
+filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+   M11=1, M12=-0, M21=0, M22=1);
+   }
